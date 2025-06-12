@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    font-family: Open Sans, Verdana, sans-serif;
+}
+        </style>
+    </head>
+    <body>
+        <h1>secret-home</h1>
+        <ul>
+            <li><a href="server-status">Apache server status</a> (<a href="metrics/apache">metrics</a>)</li>
+            <li><a href="apc.php">APC information</a></li>
+            <li><a href="phpinfo.php">phpinfo</a> (<a href="php_metrics.php">metrics</a>)</li>
+            <li><a href="php-fpm-status?html&full">PHP-FPM status</a> (<a href="metrics/php-fpm">metrics</a>)</li>
+            <li><a href="opcache.php">Zend OpCache information</a></li>
+            <li><a href="opcache2.php">Zend OpCache information #2</a></li>
+            <li><a href="opcache_flush.php">Zend OpCache flush</a></li>
+        </ul>
+        <h2>Logs</h2>
+        <ul>
+            <li><a href="tail.php?log=/var/log/apache2/access_APACHE_LOG_NAME_log">Apache access log</a></li>
+            <li><a href="tail.php?log=/var/log/apache2/error_APACHE_LOG_NAME_log">Apache error log</a></li>
+            <li><a href="tail.php?log=/var/log/php-fpm/php-fpm.php_error_log.APACHE_LOG_NAME.log">PHP error_log</a></li>
+            <li><a href="tail.php?log=/var/log/php-fpm/php-fpm.error.APACHE_LOG_NAME.log">PHP-FPM errors</a></li>
+            <li><a href="tail.php?log=/var/log/php-fpm/php-fpm.www.APACHE_LOG_NAME.access.log">PHP-FPM www log</a></li>
+            <li><a href="tail.php?log=/var/log/php-fpm/php-fpm.www-slow.APACHE_LOG_NAME.log">PHP-FPM www-slow log</a></li>
+        </ul>
+</body>
