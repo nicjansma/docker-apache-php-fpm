@@ -2,6 +2,8 @@
 
 Container for Apache 2.4 + PHP-FPM 7/8.
 
+Available at [hub.docker.com/r/nicjansma/apache-php-fpm](https://hub.docker.com/r/nicjansma/apache-php-fpm).
+
 ## Packages
 
 * [PHP](https://www.php.net/) 7.2, 7.3, 7.4, 8.1 and 8.2
