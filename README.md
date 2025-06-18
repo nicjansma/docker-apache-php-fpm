@@ -110,7 +110,7 @@ This means **no** compression (e.g. gzip, brotli or zstd) will be used in Apache
 
 It is expected this container will live behind a proxy such as [Traefik](https://traefik.io/traefik/) that will handle compression (better than Apache).
 
-If you want to enable HTTP compression, you can set`APACHE_DISABLE_COMPRESSION=1`.
+If you want to enable HTTP compression, you can set`APACHE_DISABLE_COMPRESSION=0`.
 
 #### Apache Logging
 
